@@ -1,0 +1,263 @@
+{
+    "plays": [
+        {
+            "__play_name": "all roles excute",
+            "name": "all roles excute",
+            "pattern": "all",
+            "play": "all roles excute",
+            "play_pattern": "all",
+            "play_uuid": "000c29d5-6207-c266-11cc-000000000004",
+            "playbook": "/home/Ajus_1234/ansible/enterprise_ha_cluster/site.yml",
+            "playbook_uuid": "cc3b246a-0891-44c1-adaa-0c70a640d714",
+            "tasks": [
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "node1",
+                    "__number": 0,
+                    "__result": "Unreachable",
+                    "__task": "Gathering Facts",
+                    "__task_action": "gather_facts",
+                    "duration": 0.041762,
+                    "end": "2026-10-27T10:05:02.678020+00:00",
+                    "host": "node1",
+                    "play": "all roles excute",
+                    "play_pattern": "all",
+                    "play_uuid": "000c29d5-6207-c266-11cc-000000000004",
+                    "playbook": "/home/Ajus_1234/ansible/enterprise_ha_cluster/site.yml",
+                    "playbook_uuid": "cc3b246a-0891-44c1-adaa-0c70a640d714",
+                    "remote_addr": "node1",
+                    "res": {
+                        "changed": false,
+                        "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.92.130 port 22: Connection refused",
+                        "unreachable": true
+                    },
+                    "resolved_action": "ansible.builtin.gather_facts",
+                    "start": "2026-10-27T10:05:02.636258+00:00",
+                    "task": "Gathering Facts",
+                    "task_action": "gather_facts",
+                    "task_args": "",
+                    "task_path": "/home/Ajus_1234/ansible/enterprise_ha_cluster/site.yml:1",
+                    "task_uuid": "000c29d5-6207-c266-11cc-00000000001f",
+                    "uuid": "8b98b8b2-aa01-400b-b9d4-3389e999b4ab"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "node2",
+                    "__number": 1,
+                    "__result": "Unreachable",
+                    "__task": "Gathering Facts",
+                    "__task_action": "gather_facts",
+                    "duration": 0.054538,
+                    "end": "2026-10-27T10:05:02.697991+00:00",
+                    "host": "node2",
+                    "play": "all roles excute",
+                    "play_pattern": "all",
+                    "play_uuid": "000c29d5-6207-c266-11cc-000000000004",
+                    "playbook": "/home/Ajus_1234/ansible/enterprise_ha_cluster/site.yml",
+                    "playbook_uuid": "cc3b246a-0891-44c1-adaa-0c70a640d714",
+                    "remote_addr": "node2",
+                    "res": {
+                        "changed": false,
+                        "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.92.129 port 22: Connection refused",
+                        "unreachable": true
+                    },
+                    "resolved_action": "ansible.builtin.gather_facts",
+                    "start": "2026-10-27T10:05:02.643453+00:00",
+                    "task": "Gathering Facts",
+                    "task_action": "gather_facts",
+                    "task_args": "",
+                    "task_path": "/home/Ajus_1234/ansible/enterprise_ha_cluster/site.yml:1",
+                    "task_uuid": "000c29d5-6207-c266-11cc-00000000001f",
+                    "uuid": "79e1f3a5-cdc9-4c72-b8bf-0ff134f82845"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "node3",
+                    "__number": 2,
+                    "__result": "Unreachable",
+                    "__task": "Gathering Facts",
+                    "__task_action": "gather_facts",
+                    "duration": 0.048252,
+                    "end": "2026-10-27T10:05:02.701367+00:00",
+                    "host": "node3",
+                    "play": "all roles excute",
+                    "play_pattern": "all",
+                    "play_uuid": "000c29d5-6207-c266-11cc-000000000004",
+                    "playbook": "/home/Ajus_1234/ansible/enterprise_ha_cluster/site.yml",
+                    "playbook_uuid": "cc3b246a-0891-44c1-adaa-0c70a640d714",
+                    "remote_addr": "node3",
+                    "res": {
+                        "changed": false,
+                        "msg": "Failed to connect to the host via ssh: ssh: connect to host node3 port 22: Connection refused",
+                        "unreachable": true
+                    },
+                    "resolved_action": "ansible.builtin.gather_facts",
+                    "start": "2026-10-27T10:05:02.653115+00:00",
+                    "task": "Gathering Facts",
+                    "task_action": "gather_facts",
+                    "task_args": "",
+                    "task_path": "/home/Ajus_1234/ansible/enterprise_ha_cluster/site.yml:1",
+                    "task_uuid": "000c29d5-6207-c266-11cc-00000000001f",
+                    "uuid": "30d0946a-2223-433c-b3af-615c86812ab4"
+                }
+            ],
+            "uuid": "000c29d5-6207-c266-11cc-000000000004"
+        }
+    ],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "config": {
+                    "help": false
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "/home/Ajus_1234/ansible/inventory"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/home/Ajus_1234/ansible/enterprise_ha_cluster/site.yml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/home/Ajus_1234/ansible/enterprise_ha_cluster"
+            },
+            "ansible-runner": {
+                "job-events": false
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/root/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "enable-prompts": false,
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "podman",
+                "enabled": false,
+                "image": "ghcr.io/ansible/creator-ee:v0.22.0",
+                "pull": {
+                    "policy": "tag"
+                }
+            },
+            "format": "yaml",
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/home/Ajus_1234/ansible/enterprise_ha_cluster/ansible-navigator.log",
+                "level": "warning"
+            },
+            "mode": "stdout",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.job-events": "Defaults",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Not set",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Not set",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Ansible configuration file",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Command line",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.enable-prompts": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Automatically determined",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Settings file",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Not set",
+        "ansible-navigator.execution-environment.environment-variables.set": "Not set",
+        "ansible-navigator.execution-environment.image": "Defaults",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Defaults",
+        "ansible-navigator.execution-environment.volume-mounts": "Not set",
+        "ansible-navigator.format": "Defaults",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Defaults",
+        "ansible-navigator.logging.level": "Defaults",
+        "ansible-navigator.mode": "Command line",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "/home/Ajus_1234/ansible/enterprise_ha_cluster/ansible-navigator.yml",
+        "settings_file_source": "Search path"
+    },
+    "status": "failed",
+    "status_color": 9,
+    "stdout": [
+        "\u001b[1;35m[WARNING]: Collection community.general does not support Ansible version\u001b[0m",
+        "\u001b[1;35m2.14.18\u001b[0m",
+        "\u001b[1;35m[WARNING]: Collection ansible.posix does not support Ansible version 2.14.18\u001b[0m",
+        "",
+        "PLAY [all roles excute] ********************************************************",
+        "",
+        "TASK [Gathering Facts] *********************************************************",
+        "\u001b[1;31mfatal: [node1]: UNREACHABLE! => {\"changed\": false, \"msg\": \"Failed to connect to the host via ssh: ssh: connect to host 192.168.92.130 port 22: Connection refused\", \"unreachable\": true}\u001b[0m",
+        "\u001b[1;31mfatal: [node2]: UNREACHABLE! => {\"changed\": false, \"msg\": \"Failed to connect to the host via ssh: ssh: connect to host 192.168.92.129 port 22: Connection refused\", \"unreachable\": true}\u001b[0m",
+        "\u001b[1;31mfatal: [node3]: UNREACHABLE! => {\"changed\": false, \"msg\": \"Failed to connect to the host via ssh: ssh: connect to host node3 port 22: Connection refused\", \"unreachable\": true}\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************",
+        "\u001b[0;31mnode1\u001b[0m                      : ok=0    changed=0    \u001b[1;31munreachable=1   \u001b[0m failed=0    skipped=0    rescued=0    ignored=0   ",
+        "\u001b[0;31mnode2\u001b[0m                      : ok=0    changed=0    \u001b[1;31munreachable=1   \u001b[0m failed=0    skipped=0    rescued=0    ignored=0   ",
+        "\u001b[0;31mnode3\u001b[0m                      : ok=0    changed=0    \u001b[1;31munreachable=1   \u001b[0m failed=0    skipped=0    rescued=0    ignored=0   "
+    ],
+    "version": "2.0.0"
+}

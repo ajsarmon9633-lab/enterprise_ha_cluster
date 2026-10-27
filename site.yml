@@ -1,0 +1,7 @@
+- name: all roles excute
+  hosts: all
+  become: true
+  roles:
+    - db_service
+    - lb_service
+    - security_hardening

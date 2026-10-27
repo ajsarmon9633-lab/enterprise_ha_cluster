@@ -1,0 +1,57 @@
+---
+# tasks file for db_service
+- name: setup the parted
+  community.general.parted:
+    device: /dev/sda
+    number: 4
+    flags: [ lvm ]
+    part_type: primary
+    part_start: 8GiB
+    part_end: 11GiB
+    state: present
+
+- name: setup the pv
+  community.general.lvg:
+    vg: vg_db
+    pvs: /dev/sda4
+    state: present
+
+- name: setup the lv
+  community.general.lvol:
+    vg: vg_db
+    lv: lv_db
+    size: 2000m
+    state: present
+
+- name: setup  the filesystem
+  community.general.filesystem:
+    fstype: xfs
+    dev: /dev/vg_db/lv_db
+
+- name: setup the mount
+  ansible.posix.mount:
+    path: /var/lib/mysql
+    src: /dev/vg_db/lv_db
+    opts: defaults
+    fstype: xfs
+    state: mounted
+
+- name: install the package maria
+  ansible.builtin.dnf:
+    name: mariadb-server
+    state: present
+
+- name: service start enable
+  ansible.builtin.systemd:
+    name: mariadb
+    state: started
+    enabled: true
+
+- name: setup the firewall
+  ansible.posix.firewalld:
+    service: mysql
+    immediate: true
+    permanent: true
+    state: enabled
+
+

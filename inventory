@@ -1,0 +1,4 @@
+node1 ansible_user=Ajus_1234
+node2 ansible_user=Ajus_1234
+node3 ansible_user=Ajus_1234
+

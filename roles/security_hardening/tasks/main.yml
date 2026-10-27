@@ -1,0 +1,17 @@
+---
+# tasks file for security_hardening
+
+- name: enable the httpd_can_connect db selinux boolean
+  ansible.posix.seboolean:
+    name: httpd_can_network_connect_db
+    state: true
+    persistent: true
+
+- name: setup the crontab of ssh
+  ansible.builtin.cron:
+    name: "failed password"
+    user: root
+    minute: "0"
+    hour: "*/6"
+    job: "grep 'failed password' /var/log/secure >> /var/log/ssh_audit.log"
+    state: present

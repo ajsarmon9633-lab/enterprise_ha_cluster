@@ -1,0 +1,4 @@
+ansible-navigator:
+  execution-environment:
+    enabled: false
+  mode: stdout
